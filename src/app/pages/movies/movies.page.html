@@ -1,5 +1,5 @@
 <ion-header>
-<div text-center style="background:rgb(253, 236, 205)">
+<div text-center style="background:rgb(233, 252, 190)">
   <img src="assets/images/ShopNaniLogo-Main.png" style="height:150px" class="img">
   </div>
 </ion-header>
@@ -11,12 +11,12 @@
   <ion-searchbar  [(ngModel)]="searchTerm" (keyup.enter)="searchChanged($event)" ></ion-searchbar>
  
   <ion-item>
-    <ion-label >Genre</ion-label>
+    <ion-label >Type</ion-label>
     <ion-select [(ngModel)]="type" (ionChange)="searchChanged($event)">
       <ion-select-option value="">All</ion-select-option>
-      <ion-select-option value="movie">Movie</ion-select-option>
+      <ion-select-option value="movie">Movies</ion-select-option>
       <ion-select-option value="series">Series</ion-select-option>
-      <ion-select-option value="episode">Episode</ion-select-option>
+      <ion-select-option value="game">Games</ion-select-option>
     </ion-select>
   </ion-item>
   <ion-list>

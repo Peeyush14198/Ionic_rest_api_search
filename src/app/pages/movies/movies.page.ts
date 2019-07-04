@@ -19,6 +19,7 @@ export class MoviesPage implements OnInit {
   ngOnInit() {
   }
 
+  // Custom loader to load when the user presses enter untill the data is recieved from the api
   async searchChanged() {
     const loading = await this.loadingController.create({
       message: 'Loading Please Wait...',
